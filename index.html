@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>/* CSS */</style>
+<body>
+
+<div id = "graphs">
+	<div id="histogram">
+		<span id = "histTitle" class="graphTitle">Histogram</span>
+		<a class="reset" href="javascript:histogramChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+		<span class="reset" style="display: none;"></span>
+		<div class = "clearfix"></div>
+	</div>
+
+	<div id = "pieCharts">
+		<div id = "nature"  class = "pieChartContainer">
+			<div id="naturePie" class="pieChart">
+				<span class="graphTitle">Day of Week</span>
+				<a class="reset" href="javascript:naturePieChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+				<span class="reset" style="display: none;"></span>
+				<div class = "clearfix"></div>
+			</div>
+
+			<div class = "colorBlockDiv" class="graphTitle" id="naturePieBlocks">
+			</div>
+		</div>
+
+		<div id = "pJudge"  class = "pieChartContainer">
+			<div id="pJudgePie" class="pieChart">
+				<span class="graphTitle">Time of Day</span>
+				<a class="reset" href="javascript:pJudgePieChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+				<span class="reset" style="display: none;"></span>
+				<div class = "clearfix"></div>
+			</div>
+
+			<div class = "colorBlockDiv" class="graphTitle" id="pJudgePieBlocks">
+			</div>
+		</div>
+
+		<div id = "disposition"  class = "pieChartContainer">
+			<div id="dispositionPie" class="pieChart">
+				<span class="graphTitle">Classification</span>
+				<a class="reset" href="javascript:dispositionPieChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+				<span class="reset" style="display: none;"></span>
+				<div class = "clearfix"></div>
+			</div>
+
+			<div class = "colorBlockDiv" class="graphTitle" id="dispositionPieBlocks">
+			</div>
+		</div>
+
+	</div>
+
+</div>
+
+<table id="data-table" class="table table-hover dc-data-table">
+	<thead>
+	<tr class="header">
+		<th>Time</th>
+		<th>Category</th>
+		<th>Type</th>
+		<th>Description</th>
+		<th>Block</th>
+		<th>Ward</th>
+		<th>Case Number</th>
+	</tr>
+	</thead>
+</table>
+
+<div id="widthTest" class="legendLine"></div>
+
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="graph/crossfilter.js"></script>
+<script src="graph/dc.js"></script>
+<link rel="stylesheet" type="text/css" href="graph/dc.css"/>
+<link rel="stylesheet" type="text/css" href="graph/style.css"/>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+
+<script src="graph/graph.js"></script>
+
+</body>

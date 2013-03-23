@@ -1,0 +1,124 @@
+body{
+	width: 1100px;
+}
+
+.pieChart{
+	width: 240px;
+	display:inline-block;
+}
+
+.colorBlockDiv{
+	width: 0px;
+	display:inline-block;
+	height: 225px;
+	vertical-align: top;
+	text-align: left;
+
+}
+
+.colorBlock{
+	height: 15px;
+	width: 15px;
+	display: inline-block;
+	margin-right: 20px;
+}
+
+.legendLine{
+	line-height: 250%;
+}
+
+.legendSpace{
+	height: 20px;
+}
+
+#graphs{
+	display: inline-block;
+
+}
+
+#pieCharts{
+	display: inline-block;
+	margin-left: 30px
+}
+
+#histogram{
+	display:block;
+}
+
+#histTitle{
+	margin-left: 20px;
+}
+
+.pieChartContainer{
+	display: inline-block;
+	margin-bottom: 10px;
+	margin-right: 140px;
+}
+
+#disposition{
+	margin-right: 0px;
+}
+
+#disposition{
+}
+
+#widthTest{
+    position: absolute;
+    visibility: hidden;
+    height: auto;
+    width: auto;
+}
+
+.graphTitle{
+  font-size: 130%;
+  font-weight: 700;
+}
+
+
+.dc-table-label{
+	display:none;
+}
+
+ th {
+	background: #146D8F;
+	color: #FFFFFF;	
+	font-weight: 600;
+}
+
+td, th{
+	text-align: center;
+	margin: 0;
+	outline: 0 none;
+	list-style: none;
+	border-spacing: 0px;
+
+	border-bottom: 1px solid #6C6C6C;
+	font-family: 'Open Sans';
+	font-size: 13px;
+	font-style: normal;
+	height: 50px;
+	padding: 15px 5px 10px;
+	width: 97px;
+}
+
+tr:nth-child(odd) {
+	background: #e1e1e1;
+}
+
+tr:nth-child(even) {
+	background: #FFF;
+}
+
+tr:hover { 
+	background-color: #a3a3a3;
+}
+
+table{
+	clear: both;
+	width: 97%;
+	font-family: 'Cabin';
+	border: 1px solid #6C6C6C;
+	margin: 15px;
+	border-spacing: 0px;
+	text-align: center;
+}
